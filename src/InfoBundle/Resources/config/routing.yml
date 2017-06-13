@@ -1,0 +1,11 @@
+info_homepage:
+    path:     /
+    defaults: { _controller: InfoBundle:Default:index }
+
+info_contact:
+    path:     /contact
+    defaults: { _controller: InfoBundle:Default:contact }
+
+info_feature:
+    path:     /feature
+    defaults: { _controller: InfoBundle:Default:feature }

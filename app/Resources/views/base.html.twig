@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>{% block title %}沈阳西木科技有限公司{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" >
+        <!-- Custom styles for this template -->
+        <link href="/assets/css/cover.css" rel="stylesheet">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand">沈阳西木科技有限公司</h3>
+                            <nav>
+                                <ul class="nav masthead-nav">
+                                  <li class="active"><a href="{{ path('info_homepage') }}">首页</a></li>
+                                  <li><a href="#">服务</a></li>
+                                  <li><a href="#">客户系统</a></li>
+                                  <li><a href="#">关于我们</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="inner cover">
+                        {% block body %}{% endblock %}
+                    </div>
+
+                    <div class="mastfoot">
+                        <div class="inner">
+                          <p>辽ICP备17008743号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
