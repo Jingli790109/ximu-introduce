@@ -6,6 +6,10 @@ info_contact:
     path:     /contact
     defaults: { _controller: InfoBundle:Default:contact }
 
-info_feature:
-    path:     /feature
-    defaults: { _controller: InfoBundle:Default:feature }
+info_service:
+    path:     /service
+    defaults: { _controller: InfoBundle:Default:service }
+
+info_about:
+    path:     /about
+    defaults: { _controller: InfoBundle:Default:about }
